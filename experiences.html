@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Experiences</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container3">
+		
+	<div class="navbar">
+		<a href="index.html"><img src="pics/homepage/logo.png" class="logo"></a>
+			
+			
+			<nav>
+				<ul>
+					<li><a href="what.html">What is DID?</a></li>
+					<li><a href="experiences.html">Experiences</a></li>
+					<li><a href="resources.html">Resources</a></li>
+					<li><a href="abt.html">About Me</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<div class="box">
+			
+			<h1>First Hand experience</h1>
+			<p> You and your loved ones are not alone.</p>
+			
+			<div class="row">
+			<div class="col">
+				<div class="feature-img">
+					<img src="pics/exp/pic0.JPG" width="100%">
+            <img src="pics/exp/play.png" class="play-btn" onClick="playVideo('pics/esp/video0.mp4')">
+          </div>
+        </div>
+        <div class="col">
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="pics/exp/pic1.JPG">
+              <img src="pics/exp/play.png" class="play-btn" onClick="playVideo('pics/exp/video1.mp4')">
+            </div>
+			  <p>An interview with one person who has DID</p>
+          </div>
+        </div>
+
+         <div class="small-img-row">
+            <div class="small-img">
+              <img src="pics/exp/pic2.JPG">
+              <img src="pics/exp/play.png" class="play-btn" onClick="playVideo('pics/exp/video2.mp4')">
+            </div>
+			 <p>How a young lady found out she had DID</p>
+          </div>
+        </div>
+	
+    <div class="video-player" id="videoPlayer">
+      <video width="100%" controls autoplay id="myVideo">
+        <source src="video0.mp4" type="video/mp4"> 
+      </video>
+      <img src="pics/exp/close.png" class="close-btn" onClick="stopVideo()">
+      </div>
+			
+		</div>
+		
+	</div>
+	
+	
+	
+	<script>
+      var videoPlayer = document.getElementById("videoPlayer");
+
+      var myVideo = document.getElementById("myVideo");
+      
+      function stopVideo(){
+        videoPlayer.style.display = "none";
+      }
+
+      function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+      }
+	</script>
+</body>
+</html>
